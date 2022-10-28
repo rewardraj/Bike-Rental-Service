@@ -1,0 +1,21 @@
+/* Remove default browser margin and padding. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom css props */
+
+:root {
+    --heading-large: 40px;
+    --heading-medium: 36px;
+    --heading-small: 32px;
+    --paragraph-small: 18px;
+    --paragraph-medium: 20px;
+    --paragraph-large: 22px;
+    --paragraph-text-color: #000;
+    --heading-text-color: #000;
+}
+
+
