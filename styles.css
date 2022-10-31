@@ -8,14 +8,69 @@
 /* Custom css props */
 
 :root {
-    --heading-large: 40px;
-    --heading-medium: 36px;
-    --heading-small: 32px;
+    --heading-large: 45px;
+    --heading-medium: 32px;
+    --heading-small: 30px;
     --paragraph-small: 18px;
     --paragraph-medium: 20px;
     --paragraph-large: 22px;
     --paragraph-text-color: #000;
-    --heading-text-color: #000;
+    --heading-text-color: #FAFAFA;
+    --call-to-action-buttons: #F93030;
+}
+
+/* added a google font to the whole body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* gave the container a genral padding */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* nav styling */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+a {
+    text-decoration: none;
+    color: blue;
+    font-size: var(--paragraph-small);
+}
+
+.logo {
+    margin-left: 40px;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    border-style: none;
+    color: blue;
+    font-size: 14px;
 }
 
 
