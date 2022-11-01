@@ -1,78 +1,145 @@
 /* Remove default browser margin and padding. */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Custom css props */
 
 :root {
-    --heading-large: 45px;
-    --heading-medium: 32px;
-    --heading-small: 30px;
-    --paragraph-small: 18px;
-    --paragraph-medium: 20px;
-    --paragraph-large: 22px;
-    --paragraph-text-color: #000;
-    --heading-text-color: #FAFAFA;
-    --call-to-action-buttons: #F93030;
+  --heading-large: 45px;
+  --heading-medium: 32px;
+  --heading-small: 30px;
+  --paragraph-small: 18px;
+  --paragraph-medium: 20px;
+  --paragraph-large: 22px;
+  --paragraph-text-color: #000;
+  --heading-text-color: #fafafa;
+  --call-to-action-buttons: #f93030;
 }
 
 /* added a google font to the whole body */
 body {
-    font-family: 'Poppins', sans-serif;
-}
-
-/* gave the container a genral padding */
-.container {
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* nav styling */
-.nav-bar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
 nav {
-    flex: 1;
-    text-align: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  padding: 2em;
+  background-color: teal;
+  font-family: "Poppins", sans-serif;
 }
-
-nav ul {
-    display: inline-block;
-    list-style-type: none;
-}
-nav ul li {
-    display: inline-block;
-    margin-right: 40px;
-}
-
-a {
-    text-decoration: none;
-    color: blue;
-    font-size: var(--paragraph-small);
-}
-
 .logo {
-    margin-left: 40px;
+  margin-right: 10%;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
 }
 
-button {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 30px;
-    border-style: none;
-    color: blue;
+.navlinks a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #fafafa;
+}
+
+.navlinks li {
+  list-style: none;
+}
+
+/* Hamburger Menu */
+.burgery {
+  display: none;
+}
+
+.burgery div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger media queries and nav */
+@media screen and (max-width: 1024px) {
+  .navlinks {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .logo {
+    margin-right: 40%;
+  }
+
+  .navlinks {
+    position: absolute;
+    right: 0;
+    height: 80vh;
+    width: 50vw;
+    top: 10.2vh;
+    align-items: center;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+  }
+
+
+
+  .navlinks li {
+    opacity: 0;
+  }
+
+  .burgery {
+    display: block;
     cursor: pointer;
-    font-size: 14px;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes linkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* burger toggle icon animation */
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -4px);
+  }
 }
 
-
+/* Nav Button Style */
+button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  border-style: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 14px;
+}
