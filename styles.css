@@ -31,7 +31,7 @@ nav {
   align-items: center;
   min-height: 8vh;
   padding: 2em;
-  background-color: teal;
+  background-color: transparent;
   font-family: "Poppins", sans-serif;
 }
 .logo {
@@ -139,7 +139,16 @@ button {
   display: flex;
   align-items: center;
   border-style: none;
-  color: blue;
+  color: #f93030;
   cursor: pointer;
   font-size: 14px;
+}
+
+.bk-image {
+  background-image: url("./Images/hero3.jpg");
+  background-position: 10% center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: 100vw 100vh;
 }
