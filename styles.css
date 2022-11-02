@@ -144,6 +144,7 @@ button {
   font-size: 14px;
 }
 
+/*styling the background image */
 .bk-image {
   background-image: url("./Images/hero3.jpg");
   background-position: 10% center;
