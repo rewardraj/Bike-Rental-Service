@@ -50,9 +50,14 @@ nav {
   color: #fafafa;
 }
 
+.navlinks a:hover {
+  color: red;
+}
+
 .navlinks li {
   list-style: none;
 }
+
 
 /* Hamburger Menu */
 .burgery {
@@ -86,10 +91,15 @@ nav {
     width: 50vw;
     top: 10.2vh;
     align-items: center;
-    background-color: teal;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     transform: translateX(100%);
+  }
+
+  .navlinks a:hover {
+    background-color: var(--call-to-action-buttons);
+    color: var(--heading-text-color);
   }
 
 
@@ -132,16 +142,21 @@ nav {
 }
 
 /* Nav Button Style */
-button {
+.signup-btn {
   padding: 10px 20px;
   border-radius: 30px;
   justify-self: center;
   display: flex;
   align-items: center;
   border-style: none;
-  color: #f93030;
+  color: #000;
   cursor: pointer;
   font-size: 14px;
+}
+
+.signup-btn:hover {
+  background-color: var(--call-to-action-buttons);
+  color: var(--heading-text-color)
 }
 
 /*styling the background image */
@@ -151,5 +166,66 @@ button {
   background-repeat: no-repeat;
   min-height: 100vh;
   min-width: 100vw;
+  z-index: 3;
   background-size: 100vw 100vh;
+}
+
+
+.hero-text {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding-top: 10px;
+
+}
+
+.hero-text h1 {
+  color: var(--heading-text-color);
+  font-size: 70px;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.hero-text p {
+    margin: 10px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 50px;
+
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+}
+
+.hero-btn {
+  height: 50px;
+  width: 130px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: var(--call-to-action-buttons);
+  border: none;
+  color: #fff;
+  margin-top: 4%;
+  font-size: 20px;
+}
+
+.hero-btn:hover {
+  background-color: var(--heading-text-color);
+  color: #000;
 }
