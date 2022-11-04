@@ -230,7 +230,7 @@ nav {
   color: #000;
 }
 /* styling the container */
-section2
+section3
     .container1{
         background-color:burlywood;
         width: 300px;
@@ -271,4 +271,88 @@ section2
   position: relative;
   display: inline-block;
   padding-left: 30px;
+}
+/*styles for advantage section*/
+.section2{
+  padding-top: 20px;
+  background: rgb(80, 80, 76);
+  color: #fafafa;
+}
+.section2 h2{
+  text-align: center;
+}
+.section2 .bigline{
+  width: 2.5%;
+  height: 5px;
+  background-color: #fafafa;
+  border:0 none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+.section2 hr{
+  width: 10%;
+  height: 5px;
+  background-color: #fafafa;
+  border:0 none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.advantages{
+  display: grid;
+  position: inline-block;
+  justify-content: center;
+  align-content: center;
+  padding-top: 10px;
+}
+
+.bike_rental{
+  grid-column: 1/2;
+  /*background: green;*/
+  place-self: center;
+  text-align: center;
+}
+.booking{
+  grid-column: 2/3;
+  /*background: rgb(236, 213, 0);*/
+  place-self: center;
+  text-align: center;
+}
+.guided_tour{
+  grid-column: 3/4;
+  /*background: rgb(155, 2, 2);*/
+  place-self: center;
+  text-align: center;
+}
+.bike_repair{
+  grid-column: 4/5;
+ /* background: rgb(2, 189, 222);*/
+  place-self: center;
+  text-align: center;
+}
+
+.advantages button{
+  width: 75px;
+  height: 75px;
+  color: #fafafa;
+  border-radius: 37px;
+  background: transparent;
+  z-index: 1;
+  outline: none;
+  border: 1px solid #fafafa;
+}
+.advantages p{
+  padding:10px;
 }
