@@ -233,20 +233,20 @@ nav {
 section2
     .container1{
         background-color:burlywood;
-        width: 300px;
+        width: 400px;
         height: 200px;
         margin-top: 20px;
-        margin-left: 10px;
+        margin-left: 80px;
         position: relative;
         display: inline-block;
         padding-left: 30px;
                  }
     .container2{
         background-color: darkslategrey;
-        width: 300px;
+        width: 400px;
         height: 200px;
         margin-top: 20px;
-        margin-left: 10px;
+        margin-left: 80px;
         position: relative;
         display: inline-block;
         padding-left: 30px;
@@ -254,20 +254,20 @@ section2
     }
 .container3 {
     background-color: yellowgreen;
-    width: 300px;
+    width: 400px;
     height: 200px;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 80px;
     position: relative;
     display: inline-block;
     padding-left: 30px;
 }
 .container4 {
   background-color: rgb(236, 72, 102);
-  width: 300px;
+  width: 400px;
   height: 200px;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 80px;
   position: relative;
   display: inline-block;
   padding-left: 30px;
